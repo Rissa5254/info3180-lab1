@@ -1,12 +1,39 @@
 <!DOCTYPE html> 
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>My Website - About</title> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" /> 
     </head>
     <body>
-        <h1>Marissa O'Meally</h1>
-        <p>I am a third-year student furthering my studies in Dynamic Web Development who enjoys learning new things and expresing creative. 
-            In my free time, I love drawing, dancing and listening to music.</p> 
+        <div class="container">
+            <header class= "header">
+                <img src="{{url_for('static', filename='profile.jpeg') }}" alt="An image of myself" />
+                <h1>Marissa O'Meally</h1>
+            </header>
+            <main class="main">
+                <h2>About Me</h2>
+                <p>My name is Marissa O'Meally, and I am a third-year student at The University of the West Indies pursuing a degree in Computer Science 
+                    with a minor in Psychology. I am currently learning more about the course Dynamic Web Development. I enjoy learning new things, 
+                    expressing my creativity, and continuously developing and strengthening my skills.</p> 
+                <h2>Hobbies</h2>
+                <p>In my free time, I love:</p>
+                <ul>
+                    <li>Drawing</li>
+                    <li>Dancing</li>
+                    <li>Listening to music</li>
+                </ul>
+            </main>
+            <aside class="sidebar">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/mar._issa/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
+            </aside>
+            <footer class="footer">
+                <p>Copyright &copy; 2026, Marissa O'Meally</p>
+            </footer>
+        </div>
     </body> 
 </html>
